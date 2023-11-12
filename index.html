@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="heading">Welcome to My Calculator :)</h1>
+        <div class="calculatorWrapper">
+            <div class="displayWrapper">
+                <input type="text" placeholder="0" id="display" onkeypress="_keyHandle(enter)">
+            </div>
+
+            <div class="firstLine">
+                <input type="button" value="AC" id="clr" onclick="clr()">
+                <input type="button" value="DEL" id="del" onclick="deleteLast()">
+                <input type="button" value="%" id="mod" onclick="result(value)">
+                <input type="button"  id="div" value="&divide;" onclick="result('/')">
+            </div>
+
+            <div class="secondLine">
+                <input type="button" value="7" onclick="result(value)">
+                <input type="button" value="8" onclick="result(value)">
+                <input type="button" value="9" onclick="result(value)">
+                <input type="button"  id="mul" value="x" onclick="result('*')">
+            </div>
+
+            <div class="thirdLine">
+                <input type="button" value="4" onclick="result(value)">
+                <input type="button" value="5" onclick="result(value)">
+                <input type="button" value="6" onclick="result(value)">
+                <input type="button"  id="sub" value="-" onclick="result(value)">
+            </div>
+
+            <div class="fourthLine">
+                <input type="button" value="1" onclick="result(value)">
+                <input type="button" value="2" onclick="result(value)">
+                <input type="button" value="3" onclick="result(value)">
+                <input type="button"  id="addition" value="+" onclick="result(value)">
+            </div>
+
+            <div class="fifthLine">
+                <input type="button" value="0" id="zero" onclick="result(value)">
+                <input type="button" value="." onclick="result(value)">
+                <input type="button"  id="equals" value="=" onclick="calculateResult()">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
