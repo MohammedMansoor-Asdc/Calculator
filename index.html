@@ -10,7 +10,12 @@
 
 <body>
     <div class="container">
-        <h1 id="heading">Welcome to My Calculator :)</h1>
+        <div class="headingWrapper">
+            <h1 id="heading">Welcome to My Calculator :)</h1>
+            <div class="toggleWrapper">
+                <i class="toggleBtn"></i>
+            </div>
+        </div>
         <div class="calculatorWrapper">
             <div class="displayWrapper">
                 <input type="text" placeholder="0" id="display" onkeypress="_keyHandle(enter)">
@@ -20,34 +25,34 @@
                 <input type="button" value="AC" id="clr" onclick="clr()">
                 <input type="button" value="DEL" id="del" onclick="deleteLast()">
                 <input type="button" value="%" id="mod" onclick="result(value)">
-                <input type="button"  id="div" value="&divide;" onclick="result('/')">
+                <input type="button" id="div" value="&divide;" onclick="result('/')">
             </div>
 
             <div class="secondLine">
                 <input type="button" value="7" onclick="result(value)">
                 <input type="button" value="8" onclick="result(value)">
                 <input type="button" value="9" onclick="result(value)">
-                <input type="button"  id="mul" value="x" onclick="result('*')">
+                <input type="button" id="mul" value="x" onclick="result('*')">
             </div>
 
             <div class="thirdLine">
                 <input type="button" value="4" onclick="result(value)">
                 <input type="button" value="5" onclick="result(value)">
                 <input type="button" value="6" onclick="result(value)">
-                <input type="button"  id="sub" value="-" onclick="result(value)">
+                <input type="button" id="sub" value="-" onclick="result(value)">
             </div>
 
             <div class="fourthLine">
                 <input type="button" value="1" onclick="result(value)">
                 <input type="button" value="2" onclick="result(value)">
                 <input type="button" value="3" onclick="result(value)">
-                <input type="button"  id="addition" value="+" onclick="result(value)">
+                <input type="button" id="addition" value="+" onclick="result(value)">
             </div>
 
             <div class="fifthLine">
                 <input type="button" value="0" id="zero" onclick="result(value)">
                 <input type="button" value="." onclick="result(value)">
-                <input type="button"  id="equals" value="=" onclick="calculateResult()">
+                <input type="button" id="equals" value="=" onclick="calculateResult()">
             </div>
         </div>
     </div>

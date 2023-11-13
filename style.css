@@ -13,16 +13,76 @@ body {
     height: auto;
 }
 
+.headingWrapper{
+    display: flex;
+    gap: 50px;
+    margin-top: 50px;
+}
+
 #heading {
     color: white;
     margin-bottom: 85px;
 }
 
+.toggleWrapper {
+    height: 50px;
+    width: 92px;
+    background-color: rgb(146, 146, 146);
+    border-radius: 30px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.toggleBtn {
+    position: absolute;
+    height: 45px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgb(64, 63, 63);
+    padding: 0px;
+    margin: 2px;
+    transition: transform .3s ease;
+    box-shadow: 0px 0px 12px white;
+}
+
+.darkMode .toggleWrapper {
+    background-color: rgb(0, 191, 255);
+}
+
+.darkMode .toggleBtn{
+    background-color: white;
+}
+
+body.darkMode {
+    background-color: white;
+}
+
+.darkMode .calculatorWrapper {
+    box-shadow: 0px 0px 10px 0px black;
+}
+
+.darkMode #heading {
+    color: black;
+}
+
+.darkMode #display {
+    background-color: white;
+    color: black;
+}
+
+.darkMode .toggleBtn {
+    transform: translateX(3rem);
+}
+
+.darkMode .calculatorWrapper input:hover {
+    box-shadow: 0px 0px 6px black;
+}
+
 .calculatorWrapper {
     text-align: center;
     border-radius: 22px;
-    height: 620px;
-    width: auto;
+    height: 610px;
+    width: 475px;
     box-shadow: 0px 0px 10px 0px white;
 }
 
@@ -40,7 +100,7 @@ body {
 }
 
 .calculatorWrapper input:hover {
-    box-shadow: 0px  0px 6px white;
+    box-shadow: 0px 0px 6px white;
 }
 
 #display {
@@ -52,6 +112,7 @@ body {
     color: white;
     text-align: right;
     border-radius: 25px;
+    padding: 0;
 }
 
 /* .displayWrapper input ::placeholder{
